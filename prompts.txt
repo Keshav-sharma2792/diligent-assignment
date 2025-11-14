@@ -1,0 +1,43 @@
+Prompt 1:
+Generate synthetic e-commerce data for a sample retail system. Create five CSV files with realistic values and relationships between columns:
+
+1. customers.csv → customer_id, full_name, email, city, created_at  
+2. products.csv → product_id, product_name, category, price  
+3. orders.csv → order_id, customer_id, order_date, order_status  
+4. order_items.csv → item_id, order_id, product_id, quantity  
+5. payments.csv → payment_id, order_id, payment_amount, payment_mode, payment_date
+
+Generate approximately 100 rows for each file. Ensure foreign keys (customer_id, product_id, order_id) match logically. Save all files inside a folder named /data.
+Prompt 2:
+Write Python code to ingest the synthetic e-commerce CSV files into a SQLite database. The code should:
+
+1. Create a database named "ecommerce.db".
+2. Create tables for customers, products, orders, order_items, and payments
+   with appropriate data types and primary/foreign keys.
+3. Read the CSV files from the /data folder.
+4. Insert the records into the respective tables.
+5. Include basic error handling and print a confirmation message after a successful import.
+
+The output should be a complete and ready-to-run Python script.
+Prompt 3:
+Write an SQL query that joins the customers, orders, order_items, payments, and products tables to generate a consolidated report containing:
+
+- customer_name  
+- order_id  
+- product_name  
+- quantity  
+- price  
+- total_amount (computed as quantity * price)
+
+Ensure the query uses proper JOINs, handles relationships correctly, and sorts the output by customer_name and order_id.
+Prompt 3:
+Write an SQL query that joins the customers, orders, order_items, payments, and products tables to generate a consolidated report containing:
+
+- customer_name  
+- order_id  
+- product_name  
+- quantity  
+- price  
+- total_amount (computed as quantity * price)
+
+Ensure the query uses proper JOINs, handles relationships correctly, and sorts the output by customer_name and order_id.
